@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secretaria</title>
+    <title>Menu Principal - Cadastro</title>
+    <link rel="stylesheet" href="PageAlunos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <input type="text" id="input_nome" placeholder="nome">
-    <input type="text" id="input_idade" placeholder="Idade">
-    <input type="email" id="input_gmail" placeholder="gmail"> 
-    <button onclick="Enviar()">Enviar</button> 
 
-    <script src="scrip.js"></script>
+    <h1>Cadastro de Alunos</h1>
+
+    <div class="container">
+        <div class="logo-text">SchoolSync</div>
+
+        <div class="card" id="cardAluno" onclick="TelaAluno()">
+            <i class="fa-solid fa-user-graduate"></i>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

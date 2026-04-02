@@ -1,0 +1,153 @@
+:root {
+    --primary-blue: #1f8acb;
+    --bg-gray: #f8f9fa;
+    --text-dark: #333;
+    --green: #28a745;
+    --yellow: #ffc107;
+    --red: #dc3545;
+}
+
+body {
+    background-color: #e9ecef;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Principal Branco */
+.main-screen {
+    background-color: white;
+    width: 90%;
+    max-width: 1000px;
+    height: 80vh;
+    border-radius: 15px;
+    position: relative;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.btn-back {
+    border: 1px solid #ccc;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--text-dark);
+}
+
+.logo-sync {
+    color: var(--primary-blue);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Barra de Busca */
+.search-container {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.search-container input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+.search-container i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+/* Cabeçalho da Tabela */
+.table-header {
+    display: flex;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #666;
+    text-transform: uppercase;
+}
+
+/* Grid de Colunas */
+.col-student { flex: 2; display: flex; align-items: center; gap: 15px; }
+.col-class { flex: 2; text-align: center; }
+.col-frequency { flex: 1; text-align: right; }
+
+/* Cards dos Alunos */
+.student-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 12px 20px;
+    margin-bottom: 12px;
+    transition: transform 0.2s;
+}
+
+.student-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    background-color: #e0d7f7;
+    color: #6f42c1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Badges de Frequência */
+.badge {
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    min-width: 80px;
+    text-align: center;
+}
+
+.bg-green { background-color: var(--green); }
+.bg-yellow { background-color: var(--yellow); }
+.bg-red { background-color: var(--red); }
+
+/* Botão Flutuante (FAB) */
+.fab-add {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 55px;
+    height: 55px;
+    background-color: #4a8dfd;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0 5px 15px rgba(74, 141, 253, 0.4);
+    cursor: pointer;
+}

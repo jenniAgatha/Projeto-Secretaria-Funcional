@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="telaDeAlunos.css">
+    <title>Document</title>
+</head>
+
+<div class="main-screen">
+    <header class="header-top">
+        <button class="btn-back" onclick="window.history.back()">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <div class="logo-sync">
+            <i class="fa-solid fa-gear"></i> SchoolSync
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <div class="table-header">
+            <div class="col-student">Student <i class="fa-solid fa-sort"></i></div>
+            <div class="col-class">Class <i class="fa-solid fa-sort"></i></div>
+            <div class="col-frequency">Frequency <i class="fa-solid fa-sort"></i></div>
+        </div>
+
+        <div class="students-list">
+            <div class="student-card">
+                <div class="col-student">
+                    <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                    <span>Ethan Carter</span>
+                </div>
+                <div class="col-class">Information Technology</div>
+                <div class="col-frequency">
+                    <span class="badge bg-green">78,15%</span>
+                </div>
+            </div>
+
+            <div class="student-card">
+                <div class="col-student">
+                    <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                    <span>Liam Parker</span>
+                </div>
+                <div class="col-class">Web Development</div>
+                <div class="col-frequency">
+                    <span class="badge bg-yellow">50,2%</span>
+                </div>
+            </div>
+
+            <div class="student-card">
+                <div class="col-student">
+                    <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                    <span>Mia Walker</span>
+                </div>
+                <div class="col-class">Information Technology</div>
+                <div class="col-frequency">
+                    <span class="badge bg-red">30,5%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="fab-add">
+        <i class="fa-solid fa-plus"></i>
+    </button>
+</div>
+<body>
+    <input type="text" id="input">
+    <button>+</button id="addStudent">
+</body>
+</html>
