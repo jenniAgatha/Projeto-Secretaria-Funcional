@@ -1,0 +1,26 @@
+{
+  "name": "projeto-secretaria-funcional",
+  "version": "1.0.0",
+  "description": "\"# Projeto-Secretaria-Funcional\" \r \"# Projeto-Secretaria-Funcional\" \r \"# Projeto-Secretaria-Funcional\" \r \"# API-Gest-o-escolar\" \r \"# API-Gest-o-escolar\" \r \"# API-Gest-o-escolar\" \r \"# Gest-o-Escolar\"",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenniAgatha/Projeto-Secretaria-Funcional.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenniAgatha/Projeto-Secretaria-Funcional/issues"
+  },
+  "homepage": "https://github.com/jenniAgatha/Projeto-Secretaria-Funcional#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mysql2": "^3.20.0"
+  }
+}

@@ -1,14 +1,18 @@
 
 
 function TelaAluno() {
-    const card = document.getElementById('cardAluno');
-if (card)
+    const button = document.getElementById('button');
+if (button)
 {
-    card.addEventListener("click", function() {
+    button.addEventListener("click", function() {
         window.location.href = "AlunoPage.html";
     });
 }
 }
+ 
+TelaAluno();
+
+
 
 
 
